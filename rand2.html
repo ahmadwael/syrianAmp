@@ -123,7 +123,7 @@ var labelArray = [],
             // Animation
             function newsTicker() {
                 window.setTimeout(function() {
-                    $container.find('li:last').stop().animate({
+                    $container.find('li:first').stop().animate({
                         opacity: 0
                     }, 1000, function() {
                         $(this).hide().prependTo($container).slideUp(1000, function() {
