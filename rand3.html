@@ -126,7 +126,7 @@ var labelArray = [],
                     $container.find('li:first').stop().animate({
                         opacity: 0
                     }, 1000, function() {
-                        $(this).hide().prependTo($container).slideUp(1000, function() {
+                        $(this).hide().appendTo($container).slideUp(1000, function() {
                             $(this).stop().animate({
                                 opacity: 1
                             }, 1000, newsTicker);
