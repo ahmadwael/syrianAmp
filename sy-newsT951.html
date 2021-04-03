@@ -41,14 +41,35 @@ var labelArray = [],
 		homePage: getQueryVariable("url"),
         numPosts: 8,
         summaryLength: 100,
-        widgetStyle: 1,
+        widgetStyle: 3,
         callBack: function() {
             var $container = $('#' + this.containerId + ' > ul'),
                 $list = $container.find('li'),
                 innerHeight = $list.first().height(),
                 outerHeight = $list.first().outerHeight(true);
             // Container & list height setup
-            
+            $container.css({
+                "height": outerHeight * $list.length / 8,
+                "overflow": "hidden"
+            });
+            $list.css({
+                "height": innerHeight,
+                "overflow": "hidden"
+            });
+            // Animation
+            function newsTicker() {
+                window.setTimeout(function() {
+                    $container.find('li:last').stop().animate({
+                        opacity: 0
+                    }, 1000, function() {
+                        $(this).hide().prependTo($container).slideDown(1000, function() {
+                            $(this).stop().animate({
+                                opacity: 1
+                            }, 1000, newsTicker);
+                        });
+                    });
+                }, 3000);
+            } newsTicker();
         }
     };
 </script>
