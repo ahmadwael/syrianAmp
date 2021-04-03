@@ -75,7 +75,19 @@ a:hover {color:#ff5500}
 	ul.related-post-style-3 .related-post-item-thumbnail {
     width: 100%;
     border-radius: 10px;
-		height: 150px;
+		height: 100%;
+}
+	.related-post-item-tooltip a {
+    color: #fff;
+}
+	.related-post-item-tooltip {
+    position: relative;
+    bottom: 63px;
+    overflow: hidden;
+    background: linear-gradient(to bottom,rgb(0 0 0 / 3%) 5%,rgb(0 0 0 / 77%) 71%);
+    border-radius: 5px;
+    max-height: 65px;
+    display: block;
 }
 .related-post-style-2 .related-post-item-title {
   font-weight:600;
@@ -127,11 +139,11 @@ var labelArray = [],
                 outerHeight = $list.first().outerHeight(true);
             // Container & list height setup
             $container.css({
-                "height": "165",
+                "height": "460px",
                 "overflow": "hidden"
             });
             $list.css({
-                "height": innerHeight,
+                "height": "225px",
                 "overflow": "hidden"
             });
             // Animation
