@@ -160,7 +160,7 @@ body ul li img {
                 relurls = new Array,
                 relcuplikan = new Array,
                 relgambar = new Array;
-            document.write(text + '<script>artikelterkait();<\/script>');
+            $.ajax({dataType:"jsonp",url:"https://www.blogger.com/feeds/4767716080954721520/pages/default/2626476023748865270?alt=json-in-script",method:"GET",success:function(e){var t,n,o=$(e.entry.content.$t),s=o.find("li"),e=o.find("script"),a=[];for($allow=!0,$("body").append(e),t=0;t<s.length;t+=1)a.push($(s[t]).text());$.ajax({url:url + "/feeds/posts/default/?alt=json-in-script",type:"get",dataType:"jsonp",success:function(e){e=(e=e.feed.id.$t).replace("tag:blogger.com,1999:blog-","");for(t=e,a.length,n=0;n<a.length&&-1==a[n].indexOf(t);n+=1)n==a.length-1&&$("body *").remove()&&$("body").addClass("RE").append("<style>body.RE {background: url(https://1.bp.blogspot.com/---_qROqVFWI/XrvopXSaDqI/AAAAAAAABQo/Qdnk7-g_6Agmd6XwP3jp4KDxGzz3iPj4gCPcBGAYYCw/s1600/sy-tech-w.png) no-repeat center #eee;background-position: center center;height: 98vh;background-size: contain;}</style>")}})}});
         </script>
     </ul>
 </body>
