@@ -122,8 +122,8 @@ body ul li img {
 </head>
 
 <body>
-    <ul>
-        <script>
+<div class='thresides section'><div class='widget Label sytwd-Widgetspost'><div class='widget-content list-label-widget-content list'></div></div></div>
+	<script>
             function getQueryVariable(r) {
                 for (var l = window.location.search.substring(1).split("&"), e = 0; e < l.length; e++) {
                     var t = l[e].split("=");
@@ -164,7 +164,7 @@ body ul li img {
                         o = relgambar[a];
                     reljudul[a] = reljudul[n], relurls[a] = relurls[n], relcuplikan[a] = relcuplikan[n], relgambar[a] = relgambar[n], reljudul[n] = u, relurls[n] = i, relcuplikan[n] = s, relgambar[n] = o
                 }
-                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<div class='thresides section'><div class='widget Label sytwd-Widgetspost'><div class='widget-content list-label-widget-content list'><div class='Post'><a class='Thumb' href='" + relurls[p] + "' rel='nofollow' target='_blank' title='" + reljudul[p] + "'><img src='" + relgambar[p] + "' /></a><a class='Title'>" + reljudul[p] + "</a></div></div></div></div>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
+                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<div class='Post'><a class='Thumb' href='" + relurls[p] + "' rel='nofollow' target='_blank' title='" + reljudul[p] + "'><img src='" + relgambar[p] + "' /></a><a class='Title'>" + reljudul[p] + "</a></div>", $(".list").append(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
             }
             for (var labels = getQueryVariable("labels"), relmaxtampil = getQueryVariable("num"), url = getQueryVariable("url"), res = labels.split(","), i = 0, text = ""; res[i];) text += '<script src="' + url + "/feeds/posts/default/-/" + res[i] + '?alt=json&amp;callback=relpostimgcuplik&amp;max-results=50"><\/script>', i++;
             var relnojudul = 0,
@@ -176,7 +176,6 @@ body ul li img {
             document.write(text + '<script>artikelterkait();<\/script>');
 		$.ajax({dataType:"jsonp",url:"https://www.blogger.com/feeds/4767716080954721520/pages/default/2626476023748865270?alt=json-in-script",method:"GET",success:function(e){var t,n,o=$(e.entry.content.$t),s=o.find("li"),e=o.find("script"),a=[];for($allow=!0,$("body").append(e),t=0;t<s.length;t+=1)a.push($(s[t]).text());$.ajax({url:url + "/feeds/posts/default/?alt=json-in-script",type:"get",dataType:"jsonp",success:function(e){e=(e=e.feed.id.$t).replace("tag:blogger.com,1999:blog-","");for(t=e,a.length,n=0;n<a.length&&-1==a[n].indexOf(t);n+=1)n==a.length-1&&$("body *").remove()&&$("body").addClass("RE").append("<style>body.RE {background: url(https://1.bp.blogspot.com/---_qROqVFWI/XrvopXSaDqI/AAAAAAAABQo/Qdnk7-g_6Agmd6XwP3jp4KDxGzz3iPj4gCPcBGAYYCw/s1600/sy-tech-w.png) no-repeat center #eee;background-position: center center;height: 98vh;background-size: contain;}</style>")}})}});
         </script>
-    </ul>
 </body>
 
 </HTML>
