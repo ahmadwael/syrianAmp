@@ -39,9 +39,10 @@ function getQueryVariable(variable) {
 var labelArray = [],
     relatedPostConfig = {
 		homePage: getQueryVariable("url"),
-        numPosts: 70,
+        numPosts: 10,
         summaryLength: 100,
         widgetStyle: 1,
+	    hoverpause:true,
         callBack: function() {
             var $container = $('#' + this.containerId + ' > ul'),
                 $list = $container.find('li'),
@@ -49,11 +50,11 @@ var labelArray = [],
                 outerHeight = $list.first().outerHeight(true);
             // Container & list height setup
             $container.css({
-                "height": outerHeight * $list.length / 70,
+                "height":"35px",
                 "overflow": "hidden"
             });
             $list.css({
-                "height": innerHeight,
+                "height": "auto",
                 "overflow": "hidden"
             });
             // Animation
@@ -69,7 +70,7 @@ var labelArray = [],
                         });
                     });
                 }, 3000);
-            } newsTicker();
+            } ;
         }
     };
 </script>
