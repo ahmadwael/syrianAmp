@@ -87,7 +87,7 @@ a:hover {color:#ff5500}
     background: linear-gradient(to bottom,rgb(0 0 0 / 3%) 5%,rgb(0 0 0 / 77%) 71%);
     border-radius: 5px;
     max-height: 65px;
-    display: block;
+    display: block;height: 55px
 }
 .related-post-style-2 .related-post-item-title {
   font-weight:600;
@@ -129,7 +129,7 @@ function getQueryVariable(variable) {
 var labelArray = [],
     relatedPostConfig = {
 		homePage: getQueryVariable("url"),
-        numPosts: 8,
+        numPosts: 10,
         summaryLength: 100,
         widgetStyle: 3,
         callBack: function() {
@@ -159,7 +159,7 @@ var labelArray = [],
                         });
                     });
                 }, 3000);
-            }  ;
+            }  newsTicker();
         }
     };
 </script>
