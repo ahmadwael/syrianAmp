@@ -153,14 +153,14 @@ var labelArray = [],
                 window.setTimeout(function() {
                     $container.find('li:last').stop().animate({
                         opacity: 1
-                    }, fast, function() {
-                        $(this).hide().prependTo($container).slideDown(fast, function() {
+                    }, 500, function() {
+                        $(this).hide().prependTo($container).slideDown(500, function() {
                             $(this).stop().animate({
                                 opacity: 1
-                            }, fast, newsTicker);
+                            }, 500, newsTicker);
                         });
                     });
-                }, fast);
+                }, 3000);
             }newsTicker();
         }
     };
