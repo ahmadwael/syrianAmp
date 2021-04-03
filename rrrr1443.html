@@ -152,7 +152,7 @@ var labelArray = [],
             function newsTicker() {
                 window.setTimeout(function() {
                     $container.find('li:last').stop().animate({
-                        opacity: 1
+                        opacity: 0
                     }, 500, function() {
                         $(this).hide().prependTo($container).slideDown(500, function() {
                             $(this).stop().animate({
