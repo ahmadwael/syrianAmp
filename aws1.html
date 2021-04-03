@@ -111,6 +111,13 @@ body ul li img {
 .related-thumb img{width:100%;height:100%;border-radius:5px}
 .related-title-thumb{width:100%;padding:3px;position:relative;bottom:68px;color:#fff;background:linear-gradient(to bottom,rgb(0 0 0 / 0%) 0%,rgb(0 0 0 / 42%) 18%);height:62px;text-align:center;margin:0 0;font-size:12px;overflow:hidden;line-height:20px}
 .related-title-thumb:hover{color:#a00000;transition:all 0.8s}
+.list .Post:first-of-type,.list-recent .Post:first-of-type,.sy-t-wd-recent .Post:first-of-type{height:250px;width:100%}
+.list .Post,.list-recent .Post,.sy-t-wd-recent .Post{margin:10px 0;padding-bottom:10px;border-bottom:1px solid #eee}
+.list .Post:first-of-type a.Thumb,.list-recent .Post:first-of-type a.Thumb,.sy-t-wd-recent .Post:first-of-type a.Thumb{width:100%;height:100%}
+.list .Post a.Thumb,.list-recent .Post a.Thumb,.sy-t-wd-recent .Post a.Thumb{width:100px;height:90px;display:inline-block;vertical-align:top;float:right;margin-left:5px}
+.list .Post:first-of-type:before,.list-recent .Post:first-of-type:before,.sy-t-wd-recent .Post:first-of-type:before{content:'';position:absolute;bottom:0;right:0;left:0;z-index:1;width:100%;height:50%;border-radius:10px;background:linear-gradient(to bottom,rgba(0,0,0,0) 10%,rgba(0,0,0,0.8) 100%)}
+.list .Post:first-of-type a.Title,.list-recent .Post:first-of-type a.Title,.sy-t-wd-recent .Post:first-of-type a.Title{position:absolute;bottom:0;background:linear-gradient(to bottom,rgba(0,0,0,0) 10%,rgba(0,0,0,0.8) 100%);color:#fff;height:4.5em;width:100%;z-index:12;border-radius:10px;text-align:center}
+.list .Post a.Title,.list-recent .Post a.Title,.sy-t-wd-recent .Post a.Title{width:calc((100% - 115px) / 1);font-size:14px;display:block;line-height:1.5em;max-height:4.5em;color:#000;overflow:hidden}
     </style>
 </head>
 
@@ -157,7 +164,7 @@ body ul li img {
                         o = relgambar[a];
                     reljudul[a] = reljudul[n], relurls[a] = relurls[n], relcuplikan[a] = relcuplikan[n], relgambar[a] = relgambar[n], reljudul[n] = u, relurls[n] = i, relcuplikan[n] = s, relgambar[n] = o
                 }
-                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<a class='related-thumb' href='" + relurls[p] + "' rel='nofollow' target='_blank' title='" + reljudul[p] + "'><img src='" + relgambar[p] + "' /></a><a class='related-title-thumb'>" + reljudul[p] + "</a>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
+                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<div class='thresides section'><div class='widget Label sytwd-Widgetspost'><div class='widget-content list-label-widget-content list'><div class='Post'><a class='Thumb' href='" + relurls[p] + "' rel='nofollow' target='_blank' title='" + reljudul[p] + "'><img src='" + relgambar[p] + "' /></a><a class='Title'>" + reljudul[p] + "</a></div></div></div></div>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
             }
             for (var labels = getQueryVariable("labels"), relmaxtampil = getQueryVariable("num"), url = getQueryVariable("url"), res = labels.split(","), i = 0, text = ""; res[i];) text += '<script src="' + url + "/feeds/posts/default/-/" + res[i] + '?alt=json&amp;callback=relpostimgcuplik&amp;max-results=50"><\/script>', i++;
             var relnojudul = 0,
