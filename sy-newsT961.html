@@ -39,9 +39,9 @@ function getQueryVariable(variable) {
 var labelArray = [],
     relatedPostConfig = {
 		homePage: getQueryVariable("url"),
-        numPosts: 8,
+        numPosts: 70,
         summaryLength: 100,
-        widgetStyle: 3,
+        widgetStyle: 1,
         callBack: function() {
             var $container = $('#' + this.containerId + ' > ul'),
                 $list = $container.find('li'),
@@ -49,7 +49,7 @@ var labelArray = [],
                 outerHeight = $list.first().outerHeight(true);
             // Container & list height setup
             $container.css({
-                "height": outerHeight * $list.length / 8,
+                "height": outerHeight * $list.length / 70,
                 "overflow": "hidden"
             });
             $list.css({
