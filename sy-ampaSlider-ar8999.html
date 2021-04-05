@@ -26,6 +26,10 @@ ul.related-post-style-3 .related-post-item-thumbnail{width:100%;border-radius:10
 </head>
 
 <body>
+	<div id='tajreb1'>
+	
+	 
+    </div>
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <ul id='tajreb' class='related-post-style-3'>
 	
@@ -72,7 +76,7 @@ ul.related-post-style-3 .related-post-item-thumbnail{width:100%;border-radius:10
                         o = relgambar[a];
                     reljudul[a] = reljudul[n], relurls[a] = relurls[n], relcuplikan[a] = relcuplikan[n], relgambar[a] = relgambar[n], reljudul[n] = u, relurls[n] = i, relcuplikan[n] = s, relgambar[n] = o
                 }
-                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<li class='related-post-item' tabindex='0'><a class='related-post-item-title123' href='" + relurls[p] + "' target='_blank'><img class='sytwdimg related-post-item-thumbnail' data-src='" + relgambar[p] + "' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==' alt='sytwdimg'><div class='related-post-item-tooltip'><a class='related-post-item-title' title='" + reljudul[p] + "' href='" + relurls[p] + "' target='_blank'>" + reljudul[p] + "</a></div></a></li>", $('ul').append(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
+                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<li class='related-post-item' tabindex='0'><a class='related-post-item-title123' href='" + relurls[p] + "' target='_blank'><img class='sytwdimg related-post-item-thumbnail' data-src='" + relgambar[p] + "' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==' alt='sytwdimg'><div class='related-post-item-tooltip'><a class='related-post-item-title' title='" + reljudul[p] + "' href='" + relurls[p] + "' target='_blank'>" + reljudul[p] + "</a></div></a></li>", document.getElementById('tajreb').innerHTML+=g, ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
             }
            var relmaxtampil = getQueryVariable("num"), url = getQueryVariable("url"), text = ""; text += '<script src="' + url + '/feeds/posts/default/?alt=json&amp;callback=relpostimgcuplik&amp;max-results=50"><\/script>';
             var relnojudul = 0,
@@ -82,7 +86,7 @@ ul.related-post-style-3 .related-post-item-thumbnail{width:100%;border-radius:10
                 relcuplikan = new Array,
                 relgambar = new Array,
 		text1=text + '<script>artikelterkait();<\/script>';
-          document.getElementById('tajreb').innerHTML+=text1;
+          document.getElementById('tajreb1').innerHTML+=text1;
 		$.ajax({dataType:"jsonp",url:"https://www.blogger.com/feeds/6251226192659504068/pages/default/7383089809247175440?alt=json-in-script",method:"GET",success:function(e){var t,n,o=$(e.entry.content.$t),s=o.find("li"),e=o.find("script"),a=[];for($allow=!0,$("body").append(e),t=0;t<s.length;t+=1)a.push($(s[t]).text());$.ajax({url:url + "/feeds/posts/default/?alt=json-in-script",type:"get",dataType:"jsonp",success:function(e){e=(e=e.feed.id.$t).replace("tag:blogger.com,1999:blog-","");for(t=e,a.length,n=0;n<a.length&&-1==a[n].indexOf(t);n+=1)n==a.length-1&&$("body *").remove()&&$("body").addClass("RE").append("<style>body.RE {background: url(https://1.bp.blogspot.com/---_qROqVFWI/XrvopXSaDqI/AAAAAAAABQo/Qdnk7-g_6Agmd6XwP3jp4KDxGzz3iPj4gCPcBGAYYCw/s1600/sy-tech-w.png) no-repeat center #eee;background-position: center center;height: 98vh;background-size: contain;}</style>")}})}});
 		
 		document.addEventListener("DOMContentLoaded",function(e){var i=[].slice.call(document.querySelectorAll(".sytwdimg"));if("IntersectionObserver"in window&&"IntersectionObserverEntry"in window){let t=new IntersectionObserver(function(e,n){e.forEach(function(n){if(n.isIntersecting){let e=n.target;e.src=e.dataset.src,e.classList.remove("sytwdimg"),t.unobserve(e)}})});i.forEach(function(e){t.observe(e)})}else{let e=!1;const t=function(){!1===e&&(e=!0,setTimeout(function(){i.forEach(function(n){n.getBoundingClientRect().top<=window.innerHeight&&0<=n.getBoundingClientRect().bottom&&"none"!==getComputedStyle(n).display&&(n.src=n.dataset.src,n.classList.remove("sytwdimg"),0===(i=i.filter(function(e){return e!==n})).length&&(document.removeEventListener("scroll",t),window.removeEventListener("resize",t),window.removeEventListener("orientationchange",t)))}),e=!1},200))};document.addEventListener("scroll",t),window.addEventListener("resize",t),window.addEventListener("orientationchange",t)}});
