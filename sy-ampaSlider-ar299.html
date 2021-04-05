@@ -29,7 +29,9 @@ ul.related-post-style-3 .related-post-item-thumbnail{width:100%;border-radius:10
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <ul id='tajreb' class='related-post-style-3'>
 	
-	 <script>
+	 
+    </ul>
+	<script>
             function getQueryVariable(r) {
                 for (var l = window.location.search.substring(1).split("&"), e = 0; e < l.length; e++) {
                     var t = l[e].split("=");
@@ -84,7 +86,6 @@ ul.related-post-style-3 .related-post-item-thumbnail{width:100%;border-radius:10
 		
 		document.addEventListener("DOMContentLoaded",function(e){var i=[].slice.call(document.querySelectorAll(".sytwdimg"));if("IntersectionObserver"in window&&"IntersectionObserverEntry"in window){let t=new IntersectionObserver(function(e,n){e.forEach(function(n){if(n.isIntersecting){let e=n.target;e.src=e.dataset.src,e.classList.remove("sytwdimg"),t.unobserve(e)}})});i.forEach(function(e){t.observe(e)})}else{let e=!1;const t=function(){!1===e&&(e=!0,setTimeout(function(){i.forEach(function(n){n.getBoundingClientRect().top<=window.innerHeight&&0<=n.getBoundingClientRect().bottom&&"none"!==getComputedStyle(n).display&&(n.src=n.dataset.src,n.classList.remove("sytwdimg"),0===(i=i.filter(function(e){return e!==n})).length&&(document.removeEventListener("scroll",t),window.removeEventListener("resize",t),window.removeEventListener("orientationchange",t)))}),e=!1},200))};document.addEventListener("scroll",t),window.addEventListener("resize",t),window.addEventListener("orientationchange",t)}});
         </script>
-    </ul>
 	<div class='apend'></div>
 	<script>
 function news() {
