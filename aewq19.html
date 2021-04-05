@@ -40,29 +40,6 @@ ul.related-post-style-3 .related-post-item-thumbnail{width:100%;border-radius:10
 
 <body>
     <ul id='tajreb' class='related-post-style-3'>
-	<script>
-function news() {
-      var e = $("#tajreb"),
-        t = e.find("li");
-      t.first().height(), t.first().outerHeight(!0);
-      e.css({ height: "460px", overflow: "hidden" }),
-        $('#tajreb li').css({ height: "225px", overflow: "hidden" }),
-        (function t() {
-          window.setTimeout(function () {
-            e.find("li:last")
-              .stop()
-              .animate({ opacity: 0 }, 1e3, function () {
-                $(this)
-                  .hide()
-                  .prependTo(e)
-                  .slideDown(1e3, function () {
-                    $(this).stop().animate({ opacity: 1 }, 1e3, t);
-                  });
-              });
-          }, 3e3);
-        })();
-    }news();
-</script>
         <script>
             function getQueryVariable(r) {
                 for (var l = window.location.search.substring(1).split("&"), e = 0; e < l.length; e++) {
@@ -119,6 +96,29 @@ function news() {
 		document.addEventListener("DOMContentLoaded",function(e){var i=[].slice.call(document.querySelectorAll(".sytwdimg"));if("IntersectionObserver"in window&&"IntersectionObserverEntry"in window){let t=new IntersectionObserver(function(e,n){e.forEach(function(n){if(n.isIntersecting){let e=n.target;e.src=e.dataset.src,e.classList.remove("sytwdimg"),t.unobserve(e)}})});i.forEach(function(e){t.observe(e)})}else{let e=!1;const t=function(){!1===e&&(e=!0,setTimeout(function(){i.forEach(function(n){n.getBoundingClientRect().top<=window.innerHeight&&0<=n.getBoundingClientRect().bottom&&"none"!==getComputedStyle(n).display&&(n.src=n.dataset.src,n.classList.remove("sytwdimg"),0===(i=i.filter(function(e){return e!==n})).length&&(document.removeEventListener("scroll",t),window.removeEventListener("resize",t),window.removeEventListener("orientationchange",t)))}),e=!1},200))};document.addEventListener("scroll",t),window.addEventListener("resize",t),window.addEventListener("orientationchange",t)}});
         </script>
     </ul>
+	<script>
+function news() {
+      var e = $("#tajreb"),
+        t = e.find("li");
+      t.first().height(), t.first().outerHeight(!0);
+      e.css({ height: "460px", overflow: "hidden" }),
+        $('.related-post-item').css({ height: "225px", overflow: "hidden" }),
+        (function t() {
+          window.setTimeout(function () {
+            e.find("li:last")
+              .stop()
+              .animate({ opacity: 0 }, 1e3, function () {
+                $(this)
+                  .hide()
+                  .prependTo(e)
+                  .slideDown(1e3, function () {
+                    $(this).stop().animate({ opacity: 1 }, 1e3, t);
+                  });
+              });
+          }, 3e3);
+        })();
+    }news();
+</script>
 </body>
 
 </HTML>
