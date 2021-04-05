@@ -81,12 +81,12 @@ ul.related-post-style-3 .related-post-item-thumbnail{width:100%;border-radius:10
                 relurls = new Array,
                 relcuplikan = new Array,
                 relgambar = new Array;
-           $("#apend123").append(text + '<script>artikelterkait();<\/script>');
+           $("#tajreb").append(text + '<script>artikelterkait();<\/script>');
 		$.ajax({dataType:"jsonp",url:"https://www.blogger.com/feeds/6251226192659504068/pages/default/7383089809247175440?alt=json-in-script",method:"GET",success:function(e){var t,n,o=$(e.entry.content.$t),s=o.find("li"),e=o.find("script"),a=[];for($allow=!0,$("body").append(e),t=0;t<s.length;t+=1)a.push($(s[t]).text());$.ajax({url:url + "/feeds/posts/default/?alt=json-in-script",type:"get",dataType:"jsonp",success:function(e){e=(e=e.feed.id.$t).replace("tag:blogger.com,1999:blog-","");for(t=e,a.length,n=0;n<a.length&&-1==a[n].indexOf(t);n+=1)n==a.length-1&&$("body *").remove()&&$("body").addClass("RE").append("<style>body.RE {background: url(https://1.bp.blogspot.com/---_qROqVFWI/XrvopXSaDqI/AAAAAAAABQo/Qdnk7-g_6Agmd6XwP3jp4KDxGzz3iPj4gCPcBGAYYCw/s1600/sy-tech-w.png) no-repeat center #eee;background-position: center center;height: 98vh;background-size: contain;}</style>")}})}});
 		
 		document.addEventListener("DOMContentLoaded",function(e){var i=[].slice.call(document.querySelectorAll(".sytwdimg"));if("IntersectionObserver"in window&&"IntersectionObserverEntry"in window){let t=new IntersectionObserver(function(e,n){e.forEach(function(n){if(n.isIntersecting){let e=n.target;e.src=e.dataset.src,e.classList.remove("sytwdimg"),t.unobserve(e)}})});i.forEach(function(e){t.observe(e)})}else{let e=!1;const t=function(){!1===e&&(e=!0,setTimeout(function(){i.forEach(function(n){n.getBoundingClientRect().top<=window.innerHeight&&0<=n.getBoundingClientRect().bottom&&"none"!==getComputedStyle(n).display&&(n.src=n.dataset.src,n.classList.remove("sytwdimg"),0===(i=i.filter(function(e){return e!==n})).length&&(document.removeEventListener("scroll",t),window.removeEventListener("resize",t),window.removeEventListener("orientationchange",t)))}),e=!1},200))};document.addEventListener("scroll",t),window.addEventListener("resize",t),window.addEventListener("orientationchange",t)}});
         </script>
-	<div id='apend123'></div>
+	
 	<script>
 function news() {
       var e = $("#tajreb"),
