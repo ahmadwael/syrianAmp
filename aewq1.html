@@ -40,24 +40,7 @@ ul{text-align:center}
 <body>
     <ul id='tajreb'>
 	<script>
-function getQueryVariable(t) {
-  for (
-    var e = window.location.search.substring(1).split("&"), i = 0;
-    i < e.length;
-    i++
-  ) {
-    var n = e[i].split("=");
-    if (n[0] == t) return n[1];
-  }
-  return !1;
-}
-var labelArray = [],
-  relatedPostConfig = {
-    homePage: getQueryVariable("url"),
-    numPosts: 10,
-    summaryLength: 100,
-    widgetStyle: 3,
-    callBack: function () {
+function () {
       var e = $("#tajreb"),
         t = e.find("a");
       t.first().height(), t.first().outerHeight(!0);
@@ -78,7 +61,6 @@ var labelArray = [],
           }, 3e3);
         })();
     }
-  };
 </script>
         <script>
             function getQueryVariable(r) {
