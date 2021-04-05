@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<HTML dir='rtl' lang='ar-AR'>
+
+<head>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta charset='utf-8' />
+    <title>Related Post</title>
+	<script src='//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'/>
+    <style>
+        @font-face{font-family:'Droid Arabic Kufi';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.eot);src:url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'),url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.ttf) format('truetype')}
+@font-face{font-family:'Droid Arabic Kufi';font-style:normal;font-weight:600;src:url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.eot);src:url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.eot?#iefix) format('embedded-opentype'),url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.ttf) format('truetype')}
+body{margin:0;font-family:"Droid Arabic Kufi","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;color:#444;overflow:hidden;height:auto}
+@media screen and (max-width:640px){body{height:360px}}
+	    * {
+    text-decoration: none;
+}
+body ul{padding:0;margin:0;float:left}
+body li{position:relative;padding:5px 0 5px;margin:0 10px 0 0;border-bottom:1px solid #d7d7d7;height:110px;float:left;width:calc(50% - 10px);list-style:none}
+@media screen and (max-width:480px){.related-thumb{width:100%!important}body li{padding:0 0 0 0;height:auto}}
+@media screen and (max-width:640px){body li{width:100%;height:auto;margin:0 0 10px 0;padding:0 0 5px 0}}
+span.news-text{font-size:14px;color:#444;line-height:1.2em;display:none}
+body ul li a{display:block;color:#15c;transition:all .2s ease;text-decoration:none;font-weight:500;line-height:1.3em}
+body ul li a:hover{text-decoration:none}
+body ul li:hover a.relinkjdulx{color:#EA4335}
+body ul li img{padding-left:10px;padding-top:10px;float:left;margin-right:10px;padding:0;margin-left:10px;border-radius:3px;width:100px}
+.relinkjdulx{font-size:17px;margin-bottom:5px;padding-top:10px}
+@media only screen and (max-width:680px){.related-thumb{width:48%!important}}
+ul{text-align:center}
+/* =============== Related Posts ============== */
+         span.news-text{display:none}
+.sytechwd .widget-content.list-label-widget-content ul{display:none}
+#sytwd .widget,#sytwd2 .widget{display:block;clear:both;padding:20px;overflow:hidden;margin:10px;box-shadow:0 0.5px 4px 0 rgb(0 0 0 / 27%);border-radius:5px;background:#fff}
+#sytwd,#sytwd2{max-width:1150px;margin:0 auto;overflow:hidden}
+#sytwd4 .widget,div#sytwd5 .widget{display:block;clear:both;overflow:hidden;margin:10px}
+.sytwd1 h3.title{position:relative;overflow:hidden;display:block;border-top:2px solid #eee;border-bottom:2px solid #eee;padding:1px 8px 3px 5px;font-size:15px;margin:0 0 18px 0;color:$(maincolor);border-radius:5px;text-shadow:1px 1px 10px #000}
+.Post{overflow:hidden;position:relative;border-radius:10px}
+a.Thumb{width:100%;height:280px;display:block;position:relative;border-radius:10px}
+.Thumb img{width:100%;height:100%;-webkit-background-size:cover!important;background-size:cover!important;background-position:center center!important;display:block;transition:all 0.5s!important;border-radius:10px}
+.Post:hover{transform:translateY(-6px)}
+.sytwd-Widgetspost a.LabLink{position:absolute;left:0;top:0;font-size:16px;width:130px;z-index:2;height:100%}
+.twosides{width:49%;display:inline-block}
+.related-thumb{text-decoration:none;display:inline-block;height:155px;width:31%;min-width:120px;-webkit-box-sizing:border-box;box-sizing:border-box;margin-right:7px;margin-bottom:7px;overflow:hidden;border-radius:5px}
+.related-thumb img{width:100%;height:100%;border-radius:5px}
+.related-title-thumb{width:100%;padding:3px;position:relative;bottom:68px;color:#fff;background:linear-gradient(to bottom,rgb(0 0 0 / 0%) 0%,rgb(0 0 0 / 42%) 18%);height:62px;text-align:center;margin:0 0;font-size:12px;overflow:hidden;line-height:20px}
+.related-title-thumb:hover{color:#a00000;transition:all 0.8s}
+.list .Post:first-of-type,.list-recent .Post:first-of-type,.sy-t-wd-recent .Post:first-of-type{height:250px;width:100%}
+.list .Post,.list-recent .Post,.sy-t-wd-recent .Post{margin:10px 0;padding-bottom:10px;border-bottom:1px solid #eee}
+.list .Post:first-of-type a.Thumb,.list-recent .Post:first-of-type a.Thumb,.sy-t-wd-recent .Post:first-of-type a.Thumb{width:100%;height:100%}
+.list .Post a.Thumb,.list-recent .Post a.Thumb,.sy-t-wd-recent .Post a.Thumb{width:100px;height:90px;display:inline-block;vertical-align:top;float:right;margin-left:5px}
+.list .Post:first-of-type:before,.list-recent .Post:first-of-type:before,.sy-t-wd-recent .Post:first-of-type:before{content:'';position:absolute;bottom:0;right:0;left:0;z-index:1;width:100%;height:50%;border-radius:10px;background:linear-gradient(to bottom,rgba(0,0,0,0) 10%,rgba(0,0,0,0.8) 100%)}
+.list .Post:first-of-type a.Title,.list-recent .Post:first-of-type a.Title,.sy-t-wd-recent .Post:first-of-type a.Title{position:absolute;bottom:0;background:linear-gradient(to bottom,rgba(0,0,0,0) 10%,rgba(0,0,0,0.8) 100%);color:#fff;height:4.5em;width:100%;z-index:12;border-radius:10px;text-align:center}
+.list .Post a.Title,.list-recent .Post a.Title,.sy-t-wd-recent .Post a.Title{width:calc((100% - 115px) / 1);font-size:14px;display:block;line-height:1.5em;max-height:4.5em;color:#000;overflow:hidden}
+    </style>
+</head>
+
+<body>
+<div class='thresides section'><div class='widget Label sytwd-Widgetspost'><div class='widget-content list-label-widget-content list'></div></div></div>
+	<script>
+function getQueryVariable(e){for(var r=window.location.search.substring(1).split("&"),l=0;l<r.length;l++){var t=r[l].split("=");if(t[0]==e)return t[1]}return!1}function saringtags(e,r){for(var l=e.split("<"),t=0;t<l.length;t++)-1!=l[t].indexOf(">")&&(l[t]=l[t].substring(l[t].indexOf(">")+1,l[t].length));return(l=l.join("")).substring(0,r-1)}var simg=getQueryVariable("si"),rsimg=0==simg?"/s450/":"/"+simg+"/";function relpostimgcuplik(e){for(var r=0;r<e.feed.entry.length;r++){var l=e.feed.entry[r];reljudul[relnojudul]=l.title.$t,postcontent="","content"in l?postcontent=l.content.$t:"summary"in l&&(postcontent=l.summary.$t),relcuplikan[relnojudul]=saringtags(postcontent,numchars),postimg="media$thumbnail"in l?l.media$thumbnail.url.replace(/.*?:\/\//g,"//").replace(/\/s[0-9]+(\-c)?\//,rsimg):"https://4.bp.blogspot.com/-OI0BoYP677M/VZu1TW7a3DI/AAAAAAAAFsE/4BRdE2YFS5A/w230-h155-p-k-no-nu/noimg.png",relgambar[relnojudul]=postimg;for(var t=0;t<l.link.length;t++)if("alternate"==l.link[t].rel){relurls[relnojudul]=l.link[t].href;break}relnojudul++}}function contains(e,r){for(var l=0;l<e.length;l++)if(e[l]==r)return!0;return!1}function artikelterkait(){for(var e=new Array(0),r=new Array(0),l=new Array(0),t=new Array(0),a=0;a<relurls.length;a++)contains(e,relurls[a])||(e.length+=1,e[e.length-1]=relurls[a],r.length+=1,r[r.length-1]=reljudul[a],l.length+=1,l[l.length-1]=relcuplikan[a],t.length+=1,t[t.length-1]=relgambar[a]);for(reljudul=r,relurls=e,relcuplikan=l,relgambar=t,a=0;a<reljudul.length;a++){var n=Math.floor((reljudul.length-1)*Math.random()),u=reljudul[a],s=relurls[a],i=relcuplikan[a],o=relgambar[a];reljudul[a]=reljudul[n],relurls[a]=relurls[n],relcuplikan[a]=relcuplikan[n],relgambar[a]=relgambar[n],reljudul[n]=u,relurls[n]=s,relcuplikan[n]=i,relgambar[n]=o}for(var g,p=0,c=Math.floor((reljudul.length-1)*Math.random()),d=c,m=getQueryVariable("pos");p<relmaxtampil&&(relurls[c]==m||(g="<div class='Post'><a class='Thumb' href='"+relurls[c]+"' rel='nofollow' target='_blank' title='"+reljudul[c]+"'><img class='sytwdimg' data-src='"+relgambar[c]+"' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==' alt='sytwdimg'/></a><a href='"+relurls[c]+"' rel='nofollow' class='Title'>"+reljudul[c]+"</a></div>",$(".list").append(g),++p!=relmaxtampil))&&(c<reljudul.length-1?c++:c=0,c!=d););}for(var labels=getQueryVariable("labels"),relmaxtampil=getQueryVariable("num"),url=getQueryVariable("url"),res=labels.split(","),i=0,text="";res[i];)text+='<script src="'+url+"/feeds/posts/default/-/"+res[i]+'?alt=json&amp;callback=relpostimgcuplik&amp;max-results=50"><\/script>',i++;var relnojudul=0,numchars=120,reljudul=new Array,relurls=new Array,relcuplikan=new Array,relgambar=new Array;document.write(text+"<script>artikelterkait();<\/script>"),$.ajax({dataType:"jsonp",url:"https://www.blogger.com/feeds/6251226192659504068/pages/default/7383089809247175440?alt=json-in-script",method:"GET",success:function(e){var r,l,t=$(e.entry.content.$t),a=t.find("li"),e=t.find("script"),n=[];for($allow=!0,$("body").append(e),r=0;r<a.length;r+=1)n.push($(a[r]).text());$.ajax({url:url+"/feeds/posts/default/?alt=json-in-script",type:"get",dataType:"jsonp",success:function(e){for(e=(e=e.feed.id.$t).replace("tag:blogger.com,1999:blog-",""),r=e,n.length,l=0;l<n.length&&-1==n[l].indexOf(r);l+=1)l==n.length-1&&$("body *").remove()&&$("body").addClass("RE").append("<style>body.RE {background: url(https://1.bp.blogspot.com/---_qROqVFWI/XrvopXSaDqI/AAAAAAAABQo/Qdnk7-g_6Agmd6XwP3jp4KDxGzz3iPj4gCPcBGAYYCw/s1600/sy-tech-w.png) no-repeat center #eee;background-position: center center;height: 98vh;background-size: contain;}</style>")}})}});
+			document.addEventListener("DOMContentLoaded",function(e){var i=[].slice.call(document.querySelectorAll(".sytwdimg"));if("IntersectionObserver"in window&&"IntersectionObserverEntry"in window){let t=new IntersectionObserver(function(e,n){e.forEach(function(n){if(n.isIntersecting){let e=n.target;e.src=e.dataset.src,e.classList.remove("sytwdimg"),t.unobserve(e)}})});i.forEach(function(e){t.observe(e)})}else{let e=!1;const t=function(){!1===e&&(e=!0,setTimeout(function(){i.forEach(function(n){n.getBoundingClientRect().top<=window.innerHeight&&0<=n.getBoundingClientRect().bottom&&"none"!==getComputedStyle(n).display&&(n.src=n.dataset.src,n.classList.remove("sytwdimg"),0===(i=i.filter(function(e){return e!==n})).length&&(document.removeEventListener("scroll",t),window.removeEventListener("resize",t),window.removeEventListener("orientationchange",t)))}),e=!1},200))};document.addEventListener("scroll",t),window.addEventListener("resize",t),window.addEventListener("orientationchange",t)}});
+	</script>
+</body>
+
+</HTML>
