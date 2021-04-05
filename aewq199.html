@@ -83,7 +83,7 @@ ul.related-post-style-3 .related-post-item-thumbnail{width:100%;border-radius:10
                 }
                 for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<li class='related-post-item' tabindex='0'><a class='related-post-item-title123' href='" + relurls[p] + "' target='_blank'><img class='sytwdimg related-post-item-thumbnail' data-src='" + relgambar[p] + "' src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==' alt='sytwdimg'><div class='related-post-item-tooltip'><a class='related-post-item-title' title='" + reljudul[p] + "' href='" + relurls[p] + "' target='_blank'>" + reljudul[p] + "</a></div></a></li>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
             }
-            for (var labels = getQueryVariable("labels"), relmaxtampil = getQueryVariable("num"), url = getQueryVariable("url"), res = labels.split(","), i = 0, text = ""; res[i];) text += '<script src="' + url + '/feeds/posts/default/?alt=json&amp;callback=relpostimgcuplik&amp;max-results=50"><\/script>', i++;
+            for (var relmaxtampil = getQueryVariable("num"), url = getQueryVariable("url"), i = 0, text = "";;) text += '<script src="' + url + '/feeds/posts/default/?alt=json&amp;callback=relpostimgcuplik&amp;max-results=50"><\/script>', i++;
             var relnojudul = 0,
                 numchars = 120,
                 reljudul = new Array,
