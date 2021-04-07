@@ -150,6 +150,10 @@ ul.newsticker {
 <script src='//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 	<div class="ticker section" id="ticker" name="شريط الأخبار"><div class="widget HTML" data-version="2" id="HTML122">
 <div class="widget-content"><div class="tickercontainer"><div class="mask"><ul id="tajreb">
+	
+	<ul><span class="tickeroverlay-right">&nbsp;</span><span class="tickeroverlay-right">&nbsp;</span></div></div></div>
+</div></div>
+
 	<script>
             function getQueryVariable(r) {
                 for (var l = window.location.search.substring(1).split("&"), e = 0; e < l.length; e++) {
@@ -191,7 +195,7 @@ ul.newsticker {
                         o = relgambar[a];
                     reljudul[a] = reljudul[n], relurls[a] = relurls[n], relcuplikan[a] = relcuplikan[n], relgambar[a] = relgambar[n], reljudul[n] = u, relurls[n] = i, relcuplikan[n] = s, relgambar[n] = o
                 }
-                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<li><a title='" + reljudul[p] + "' href='" + relurls[p] + "' target='_blank'>" + reljudul[p] + "</a></li>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
+                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<li><a title='" + reljudul[p] + "' href='" + relurls[p] + "' target='_blank'>" + reljudul[p] + "</a></li>", document.getElementByIdBy("tajreb").innerHTML=g, ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
             }
            for(var labels=getQueryVariable("labels"),relmaxtampil=getQueryVariable("num"),url=getQueryVariable("url"),res=labels.split(","),i=0,text="";res[i];)text+='<script src="'+url+"/feeds/posts/default/-/"+res[i]+'?alt=json&amp;callback=relpostimgcuplik&amp;max-results=50"><\/script>',i++;
             var relnojudul = 0,
@@ -202,10 +206,6 @@ ul.newsticker {
                 relgambar = new Array;
             document.body.innerHTML+=text + '<script>artikelterkait();<\/script>';
         </script>
-	<ul><span class="tickeroverlay-right">&nbsp;</span><span class="tickeroverlay-right">&nbsp;</span></div></div></div>
-</div></div>
-
-	
 
 
 	<script>
