@@ -1,9 +1,9 @@
 {
     "display": "standalone",
-    "name": "قالب سكويز – قالب بلوجر عصري للمجلات",
+    "name": "قالب عالم التقنية السورية",
     "short_name": "Squeeze Template",
-    "start_url": "https://www.squeeze-template.com/",
-    "scope": "https://www.squeeze-template.com/",
+    "start_url": "https://veiwblogurl.blogspot.com/",
+    "scope": "https://veiwblogurl.blogspot.com/",
     "background_color": "#ffffff",
     "theme_color": "#d24949",
     "dir" :"rtl",
@@ -42,22 +42,22 @@
     }],
     "shortcuts": [{
         "name": "شرح القالب",
-        "url": "https://www.squeeze-template.com/?view=Documentation",
+        "url": "https://veiwblogurl.blogspot.com/?view=Documentation",
         "icons": [{"src": "https://3.bp.blogspot.com/-xYYm6xUXFF4/X2FQTl6UqHI/AAAAAAAABWk/8aJ3Brt7mrYT0FqMFZTI8BHmb5tQ8PjjgCK4BGAYYCw/s96-c/LO.png", "purpose": "any", "sizes": "96x96"}]
     },
     {
         "name": "أسئلة شائعة",
-        "url": "https://www.squeeze-template.com/?view=Faq",
+        "url": "https://veiwblogurl.blogspot.com/?view=Faq",
         "icons": [{"src": "https://3.bp.blogspot.com/-xYYm6xUXFF4/X2FQTl6UqHI/AAAAAAAABWk/8aJ3Brt7mrYT0FqMFZTI8BHmb5tQ8PjjgCK4BGAYYCw/s96-c/LO.png", "purpose": "any", "sizes": "96x96"}]
     },
     {
         "name": "العملاء",
-        "url": "https://www.squeeze-template.com/?view=Clients",
+        "url": "https://veiwblogurl.blogspot.com/?view=Clients",
         "icons": [{"src": "https://3.bp.blogspot.com/-xYYm6xUXFF4/X2FQTl6UqHI/AAAAAAAABWk/8aJ3Brt7mrYT0FqMFZTI8BHmb5tQ8PjjgCK4BGAYYCw/s96-c/LO.png", "purpose": "any", "sizes": "96x96"}]
     },
     {
         "name": "نسخة مجانية",
-        "url": "https://www.squeeze-template.com/?view=Free",
+        "url": "https://veiwblogurl.blogspot.com/?view=Free",
         "icons": [{"src": "https://3.bp.blogspot.com/-xYYm6xUXFF4/X2FQTl6UqHI/AAAAAAAABWk/8aJ3Brt7mrYT0FqMFZTI8BHmb5tQ8PjjgCK4BGAYYCw/s96-c/LO.png", "purpose": "any", "sizes": "96x96"}]
     }]
 }
